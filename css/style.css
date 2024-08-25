@@ -1175,36 +1175,3 @@ h1, h2, h3, h4, h5,
       left: 33px; /* Move entirely out of the container */
   }
 
-
-  
-}
-.match-live {
-  background-color: #fff;
-  padding: 1px;
-  margin-top: 5p;
-  border-radius: 5px;
-  max-width: 100%; /* Adjust width as needed */
-  text-align: center;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-.match-details {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.team-name {
-  font-weight: bold;
-  font-size: 18px;
-  color: #333;
-  width: 100px; /* Equal width for team names */
-  text-align: center;
-}
-
-.score-display {
-  font-size: 24px;
-  font-weight: bold;
-  color: #333;
-  width: 80px; /* Centering the score between the teams */
-  text-align: center;
-}
