@@ -1135,43 +1135,43 @@ h1, h2, h3, h4, h5,
 }
 
 .live-indicator {
-  display: flex;
-  align-items: center;
-  gap: 8px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
 }
 
 .live-text {
-  font-weight: bold;
-  color: red;
-  text-transform: uppercase;
-  font-size: 14px;
+    font-weight: bold;
+    color: red;
+    text-transform: uppercase;
+    font-size: 14px;
 }
 
 .live-line-container {
-  width: 100px; /* Set a fixed width for the container */
-  height: 2px;
-  position: relative;
-  overflow: hidden; /* Hide overflow to prevent resizing issues */
+    width: 33px; /* Reduced to 1/3 of the previous 100px width */
+    height: 2px;
+    position: relative;
+    overflow: hidden; /* Hide overflow to prevent resizing issues */
 }
 
 .live-line {
-  height: 2px;
-  background-color: red;
-  position: absolute;
-  animation: draw-erase 1.5s infinite;
+    height: 2px;
+    background-color: red;
+    position: absolute;
+    animation: draw-erase 1.5s infinite;
 }
 
 @keyframes draw-erase {
-  0% {
-      left: -100px; /* Start off-screen */
-      width: 100px;
-  }
-  50% {
-      left: 0;
-      width: 100px;
-  }
-  100% {
-      left: 100px; /* Move out of the container */
-      width: 100px;
-  }
+    0% {
+        left: -33px; /* Start off-screen */
+        width: 33px; /* Reduced to 1/3 of the previous 100px width */
+    }
+    50% {
+        left: 0;
+        width: 33px;
+    }
+    100% {
+        left: 33px; /* Move out of the container */
+        width: 33px;
+    }
 }
