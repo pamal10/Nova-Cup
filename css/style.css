@@ -1209,4 +1209,35 @@ h1, h2, h3, h4, h5,
   text-align: center;
 }
 
+@media (max-width: 600px) {
+  .match-live {
+      width: 100%; /* Full width on smaller screens */
+      padding: 10px;
+  }
 
+  .live-indicator {
+      margin-bottom: 15px; /* Adjust space on smaller screens */
+  }
+
+  .live-text {
+      font-size: 12px; /* Smaller text size */
+  }
+
+  .live-line-container {
+      width: 70px; /* Adjust line width for smaller screens */
+  }
+
+  .match-details {
+      flex-direction: column; /* Stack items vertically on small screens */
+      padding: 0; /* Remove horizontal padding */
+  }
+
+  .team-name {
+      width: auto; /* Auto width for team names */
+      font-size: 16px; /* Smaller font size */
+  }
+
+  .score-display {
+      margin: 10px 0; /* Margin for spacing around score */
+  }
+}
