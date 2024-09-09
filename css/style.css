@@ -1175,6 +1175,26 @@ h1, h2, h3, h4, h5,
       left: 33px; /* Move entirely out of the container */
   }
 
+  .penalty-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5px;
+}
+.penalty-icons i {
+  font-size: 0.5rem;
+  margin: 0 2px;
+}
+.penalty-scored {
+  color: green;
+}
+.penalty-missed {
+  color: red;
+}
+.penalty-not-taken {
+  color: white;
+}
+
 
 
   
